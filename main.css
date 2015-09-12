@@ -1,0 +1,18 @@
+.login_form {
+	width: 400px;
+	height: 300px;
+	border-radius: 10px;
+	border: 1px solid black;
+	overflow: hidden;
+	position: absolute;
+	top: 100px;
+	left: 1000px;
+}
+
+.header {
+	color: black;
+	text-align: center;
+	background: #E9F2F5	;
+	font: bold;
+	font-size: 25px;
+}
