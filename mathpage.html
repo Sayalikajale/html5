@@ -1,0 +1,101 @@
+<html>
+<head>
+		<link rel="stylesheet" type= "text/css" href="main1.css">
+			<script type="text/javascript" >
+			function GetParam(name) {
+		
+				var start = location.search.indexOf("?" + name + "=");
+				if (start < 0)
+					start = location.search.indexOf("&" + name + "=");
+				if (start < 0)
+					return '';
+				start += name.length + 2;
+				var end = location.search.indexOf("&", start) - 1;
+				if (end < 0)
+					end = location.search.length;
+				var result = '';
+				for (var i = start; i <= end; i++) {
+					var c = location.search.charAt(i);
+					result = result + (c == '+' ? ' ' : c);
+				}
+				return unescape(result);
+			}
+		</script>
+</head>
+<body>
+		<form class= "login_form">
+			<div class="header">
+					Question 1	
+			</div>
+			<p style= "position: relative;left: 70px">Given points (x1,y1) and (x2,y2) select the formul to find the equation of
+			<br> the given line. </p>
+
+			<div class="section group" style= "position: relative;left: 140px">
+				<div class="col span_1_of_3">
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				
+					y = mx + b
+				
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				y - y1 = m( x- x1 )
+
+				<br>
+				<br>
+				<br>
+				<br>
+				<button style= "position: relative;left: -30px">Submit & Next Question</button>
+				</div>
+
+				<div class="col span_1_of_3">
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+					(x-h) + (y-k) = r
+
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				y - y2 = y2 - y1 / x2 - x1 (x1 - x2)
+
+				<br>
+				<br>
+				<br>
+				<br>
+				<button style= "position: relative;left: -40px">Cancel & Clear Selection</button>
+
+				</div>
+
+				<div class="col span_1_of_3">
+					This is column 3
+				</div>
+			</div>
+
+		</form>
+</body>
+</html>
