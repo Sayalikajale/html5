@@ -5,13 +5,18 @@
 	font: bold;
 	font-size: 25px;
 	overflow: hidden;
-	
 }
+
 .login_form {
-	width: 1500px;
+	width: 1300px;
 	height: 700px;
 	border: 1px solid black;
 	overflow: hidden;
+	border-radius: 10px;
+}
+
+.maindiv{
+	margin: 5%;
 }
 
 p {
@@ -23,6 +28,7 @@ p {
 	clear: both;
 	padding: 0px;
 	margin: 0px;
+	font-size: 25px;
 }
 
 /*  COLUMN SETUP  */
