@@ -1,26 +1,6 @@
 <html>
 <head>
 		<link rel="stylesheet" type= "text/css" href="main1.css">
-			<script type="text/javascript" >
-			function GetParam(name) {
-		
-				var start = location.search.indexOf("?" + name + "=");
-				if (start < 0)
-					start = location.search.indexOf("&" + name + "=");
-				if (start < 0)
-					return '';
-				start += name.length + 2;
-				var end = location.search.indexOf("&", start) - 1;
-				if (end < 0)
-					end = location.search.length;
-				var result = '';
-				for (var i = start; i <= end; i++) {
-					var c = location.search.charAt(i);
-					result = result + (c == '+' ? ' ' : c);
-				}
-				return unescape(result);
-			}
-		</script>
 </head>
 <body>
 <div class="maindiv">
@@ -32,9 +12,7 @@
 			<br> the given line. </p>
 
 			<div class="section group" style= "position: relative;left: 100px">
-				<div class="col span_1_of_3">
-				<br>
-				<br>
+				<div class="col span_1_of_3" style= "position: relative;left: 10px" >
 				<br>
 				<br>
 				<br>
@@ -52,12 +30,11 @@
 				<br>
 				<br>
 				<br>
+				<br>
 				<button style= "position: relative;left: -30px">Submit & Next Question</button>
 				</div>
 
-				<div class="col span_1_of_3">
-				<br>
-				<br>
+				<div class="col span_1_of_3" style= "position: relative;left: -40px">
 				<br>
 				<br>
 				<br>
@@ -74,12 +51,13 @@
 				<br>
 				<br>
 				<br>
-				<button style= "position: relative;left: -40px">Cancel & Clear Selection</button>
+				<br>
+				<button style= "position: relative;left: -20px">Cancel & Clear Selection</button>
 
 				</div>
 
 				<div class="col span_1_of_3">
-					<img src="C:\Users\Sayali\html5\image1.jpg" style="position: relative; left: -80px">
+					<img src="C:\Users\Sayali\html5\image1.jpg" style="position: relative; left: -90px">
 				</div>
 			</div>
 
